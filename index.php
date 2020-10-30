@@ -1,11 +1,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Hello world</title>
+        <title>ITF</title>
     </head>
     <body>
-        <h1>My First Heading</h1>
-        <p>My First Paragraph</p>
+        <h1>ชื่อ-นามสกุล</h1>
+        <p>ณพงศ์ พิพัฒน์บวรกุล</p>
+        <img src="cat.jpg">
         <img src="cat.jpg">
         <br>
         <a href="http://www.it.kmitl.ac.th">This is a Link</a>
