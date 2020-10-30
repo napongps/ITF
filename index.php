@@ -4,18 +4,20 @@
         <title>ITF</title>
     </head>
     <body>
-        <h1>ชื่อ-นามสกุล</h1>
-        <p>ณพงศ์ พิพัฒน์บวรกุล</p>
         <img src="cat.jpg">
-        <img src="cat.jpg">
+        <img src="cat2.jpg">
+ 
         <br>
-        <a href="http://www.it.kmitl.ac.th">This is a Link</a>
+        <h2>My favorite website</h2>
+        <a href="https://www.it.kmitl.ac.th/th/staff/panwit/">This is a Link</a>
 
-        <h2>The unordered list</h2>
+        <h2>ชื่อ-นามสกุล</h2>
         <ul>
-            <li>Google</li>
-            <li>Yahoo</li>
-            <li>Amazon</li>
+            <li>ณพงศ์ พิพัฒน์บวรกุล</li>
+            <li>63070219</li>
+            <li>DSBA</li>
         </ul>
+        <h1>เรื่องตลกค้าบบบบ</h1>
+        <p>วันนี้ผมไปกินข้าวกับเพื่อนครับ เพื่นสั่งกะเพราหมูสับผมเลยสั่งกะเพราหมูกรอบ</p>
     </body>
 </html>
