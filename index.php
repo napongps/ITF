@@ -9,7 +9,7 @@
  
         <br>
         <h2>My favorite website</h2>
-        <a href="https://www.it.kmitl.ac.th/th/staff/panwit/">This is a Link</a>
+        <a href="https://www.it.kmitl.ac.th/th/staff/panwit/">>>>Click<<<</a>
 
         <h2>ชื่อ-นามสกุล</h2>
         <ul>
