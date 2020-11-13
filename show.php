@@ -38,7 +38,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td><?php echo $Result['Link'];?><button oncilk="">ลบ</button><button oncilk="">เพิ่ม</button></td>
   </tr>
  </tbody>
 <?php
