@@ -13,10 +13,6 @@
 <body>
 <center>
 <?php
-function delte(idaz) {
-  echo "Hooooo"
-}
-<?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
 if (mysqli_connect_errno($conn))
