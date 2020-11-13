@@ -13,6 +13,10 @@
 <body>
 <center>
 <?php
+function delte() {
+  $sql ="DELETE FROM GuestBook WHERE id= $Result['Name']";
+}
+<?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
 if (mysqli_connect_errno($conn))
@@ -37,10 +41,11 @@ while($Result = mysqli_fetch_array($res))
 ?>
 <tbody>
   <tr>
+    <td><?php echo $Result['ID'];?></div></td>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-  <td><button oncilk="">ลบ</button><button oncilk="">แก้ไข</button></td>
+  <td><button oncilk=date>ลบ</button><button oncilk="">แก้ไข</button></td>
   </tr>
  </tbody>
 <?php
