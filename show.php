@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
 </head>
 <body>
+<center>
 <?php
 $conn = mysqli_init();
 mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
@@ -28,6 +29,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
     <th width="150"> <div align="center">Link </div></th>
   </tr>
 </thead>
+  </center>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
