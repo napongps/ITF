@@ -14,7 +14,11 @@ if (isset($_REQUEST['delete'])){
     $select_stmt->bindParam(':id', $id);
     $select_stmt->execute();
     $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
-    $delete_stmt = $db->prepare('DELETE FROM GuestBook')
+    $delete_stmt = $db->prepare('DELETE FROM GuestBook WHERE id = :id');
+    $delete_stmt->bindParam(':id', $id);
+    $delete_stmt->execute();
+
+    header('Location:show.php')
 }
 
 
