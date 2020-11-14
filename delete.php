@@ -8,13 +8,12 @@ if (mysqli_connect_errno($conn))
 }
 
 
-$name = $_POST['name'];
-$comment = $_POST['comment'];
-$link = $_POST['link'];
-$id = $_POST['id'];
+
+$id = $_POST['ID'];
 
 
-$sql = "DELETE FROM GuestBook WHERE ID='$id'";
+$query = "DELETE FROM GuestBook WHERE ID=$id;
+
 
 
 if (mysqli_query($conn, $sql)) {
@@ -22,6 +21,6 @@ if (mysqli_query($conn, $sql)) {
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-  
+
 mysqli_close($conn);
 ?>
