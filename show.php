@@ -1,10 +1,14 @@
 <html>
 <head>
-<style>
-text-align: center;  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title>ITF Lab</title>
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
 </head>
 <body>
 <?php
@@ -17,6 +21,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 ?>
 <table width="600" border="1", align="center">
+<thead class="table table-dark">
   <tr>
     <th width="50"> <div align="center">ID</div></th>
     <th width="100"> <div align="center">Name</div></th>
@@ -40,7 +45,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary">เพิ่ม</a>
+<a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary", align = center>เพิ่ม</a>
 <?php
 mysqli_close($conn);
 ?>
