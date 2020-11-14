@@ -8,11 +8,13 @@ if (mysqli_connect_errno($conn))
 }
 
 
-if (isset($_GET['delete'])){
-    $id = $_GET['delete'];
-    $query = "DELETE FROM GuestBook WHERE id=$id"; 
-    $result = mysqli_query($con,$query) or die ( mysqli_error());
-    header("Location: show.php");
+if (isset($_REQUEST['delete'])){
+    $id = $_REQUEST['delete'];
+    $select_stmt = $db->prepare("SELECT * FROM GuestBook WHERE id = :id")
+    $select_stmt->bindParam(':id', $id);
+    $select_stmt->execute();
+    $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
+    $delete_stmt = $db->prepare('DELETE FROM GuestBook')
 }
 
 
