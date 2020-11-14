@@ -9,7 +9,7 @@ if (mysqli_connect_errno($conn))
 
 
 
-$id = $_POST['ID'];
+$id = $_POST['id'];
 
 
 $query = "DELETE FROM GuestBook WHERE ID=$id;
