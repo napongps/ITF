@@ -37,7 +37,11 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary" align="center">เพิ่ม</a>
+<div class = container>
+    <div class = center>
+        <a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary">เพิ่ม</a>
+    </div>
+</div>
 <?php
 mysqli_close($conn);
 ?>
