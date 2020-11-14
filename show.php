@@ -35,6 +35,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
+<a href="#" class="btn btn-primary">เพิ่ม</a>
 <?php
 mysqli_close($conn);
 ?>
