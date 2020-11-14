@@ -18,9 +18,9 @@ $sql = "INSERT INTO GuestBook (Name , Comment , Link) VALUES ('$name', '$comment
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
-    <a href="https://napong.azurewebsites.net/show.php" class="btn btn-primary">กลับสู่หน้าหลัก</a>
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
 mysqli_close($conn);
+<a href="https://napong.azurewebsites.net/show.php" class="btn btn-primary">กลับสู่หน้าหลัก</a>
 ?>
