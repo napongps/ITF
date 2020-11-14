@@ -21,7 +21,8 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 ?>
 <table width="600" border="1">
-  <tr class="w3-red>
+  <thead class="thead-dark">
+  <tr>
     <th width="50"> <div align="center">ID</div></th>
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
@@ -31,6 +32,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
+  <thead class="thead-light">
   <tr>
     <td><?php echo $Result['ID'];?></div></td>
     <td><?php echo $Result['Name'];?></div></td>
