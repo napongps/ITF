@@ -21,8 +21,8 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 ?>
 <table width="600" border="1", align="center">
-<thead class="table table-dark">
   <tr>
+    <thead class="table table-dark">
     <th width="50"> <div align="center">ID</div></th>
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
@@ -45,7 +45,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary", align = center>เพิ่ม</a>
+<a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary" align = center>เพิ่ม</a>
 <?php
 mysqli_close($conn);
 ?>
