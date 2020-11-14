@@ -8,11 +8,12 @@ if (mysqli_connect_errno($conn))
 }
 
 
-
-$id = $_REQUEST['id'];
-$query = "DELETE FROM GuestBook WHERE ID=$id;
-$result = mysqli_query($con,$query)
-
+if (isset($_GET['delete'])){
+    $id = $_GET['delete'];
+    $query = "DELETE FROM GuestBooak WHERE id=$id"; 
+    $result = mysqli_query($con,$query) or die ( mysqli_error());
+    header("Location: show.php");
+}
 
 
 if (mysqli_query($conn, $sql)) {
@@ -20,6 +21,6 @@ if (mysqli_query($conn, $sql)) {
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-
+  
 mysqli_close($conn);
 ?>
