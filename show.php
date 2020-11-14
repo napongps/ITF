@@ -1,7 +1,10 @@
 <html>
 <head>
+<style>
+text-align: center;  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <title>ITF Lab</title>
+</style>
 </head>
 <body>
 <?php
@@ -37,11 +40,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<div class = container>
-    <div class = center>
-        <a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary">เพิ่ม</a>
-    </div>
-</div>
+<a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary">เพิ่ม</a>
 <?php
 mysqli_close($conn);
 ?>
