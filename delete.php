@@ -10,7 +10,7 @@ if (mysqli_connect_errno($conn))
 
 if (isset($_GET['delete'])){
     $id = $_GET['delete'];
-    $query = "DELETE FROM GuestBooak WHERE id=$id"; 
+    $query = "DELETE FROM GuestBook WHERE id=$id"; 
     $result = mysqli_query($con,$query) or die ( mysqli_error());
     header("Location: show.php");
 }
