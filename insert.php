@@ -21,6 +21,5 @@ if (mysqli_query($conn, $sql)) {
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
-mysqli_refresh($conn, MYSQLI_REFRESH_GRANT);
 mysqli_close($conn);
 ?>
