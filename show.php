@@ -33,12 +33,11 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
+    <thead class="table table-striped">
     <td><?php echo $Result['ID'];?></div></td>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-  </tr>
-  <tr>
     <td><a href="https://napong.azurewebsites.net/delete.php" class="btn btn-primary">ลบ</a></td>
     <td><a href="#" class="btn btn-primary">แก้ไข</a></td>
   </tr>
