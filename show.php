@@ -32,7 +32,6 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-  <thead class="thead-light">
   <tr>
     <td><?php echo $Result['ID'];?></div></td>
     <td><?php echo $Result['Name'];?></div></td>
