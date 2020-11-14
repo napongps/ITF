@@ -45,7 +45,7 @@ while($Result = mysqli_fetch_array($res))
 ?>
 </table>
 <div class = container>
-  <div class=center>
+  <div class="row justify-content-center">
     <a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary">เพิ่ม</a>
   </div>
 </div>
