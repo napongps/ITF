@@ -33,7 +33,7 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <thead class="table table-striped">
+    <thead class="table table-sm">
     <td><?php echo $Result['ID'];?></div></td>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
