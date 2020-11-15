@@ -27,6 +27,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
+    <th width="100"> <div align="center">Actions</div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -37,8 +38,8 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><a href="https://napong.azurewebsites.net/delete.php?delete=<?php echo row['id']; ?>" class="btn btn-danger">ลบ</a></td>
-    <td><a href="#" class="btn btn-primary">แก้ไข</a></td>
+    <td><a href="https://napong.azurewebsites.net/delete.php?delete=<?php echo row['id']; ?>" class="btn btn-danger">ลบ</a>
+    <a href="#" class="btn btn-primary">แก้ไข</a></td>
   </tr>
 <?php
 }
