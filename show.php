@@ -40,7 +40,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
     <td><a href="https://napong.azurewebsites.net/delete.php?delete=<?php echo row['id']; ?>" class="btn btn-danger">ลบ</a></td>
-    <td><a href="#" class="btn btn-primary">แก้ไข</a></td>
+    <td><a href="edit.php" class="btn btn-primary">แก้ไข</a></td>
   </tr>
 <?php
 }
