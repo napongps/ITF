@@ -4,14 +4,16 @@
   $id = $_GET['id'];
   $result = mysqli_query($conn,"SELECT * FROM GuestBook WHERE id='$id'");
   $row = mysqli_fetch_assoc($result);
-
-  if(isset($_POST['update'])){
+  $name = $row['Name'];
+  $comment = $row['Comment'];
+  $link = $row['Link'];
+  if(isset($_POST['submit'])){
     $id = $_GET['id'];
-    $name = $POST['name'];
-    $comment = $POST['comment'];
-    $link = $POST['link'];
+    $name2 = $POST['name'];
+    $comment2 = $POST['comment'];
+    $link2 = $POST['link'];
 
-    $sql = "UPDATE GuestBook SET Name='$name',Comment='$comment', Link='$link' WHERE id='id'";
+    $sql = "UPDATE GuestBook SET Name='$name2',Comment='$comment2', Link='$link2' WHERE id='id'";
 
     if(mysqli_query($conn,$sql)){
       echo"The record has been update";
@@ -29,12 +31,12 @@
 <body>
   <!-- <form action = "insert.php" method = "post" id="CommentForm" > -->
     Name:<br>
-    <input type="text" name = "name" id="idName" value="<?= $row['Name']; ?>"> <br>
+    <input type="text" name = "name" id="idName" value="<?= $name; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $row['Comment']; ?>"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $comment; ?>"></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" value="<?= $row['Link']; ?>"> <br><br>
-    <input type="submit" name = "update" id="commentBtn">
+    <input type="text" name = "link" id="idLink" value="<?= $link; ?>"> <br><br>
+    <input type="submit" name = "submit" id="commentBtn">
   </form>
 </body>
 </html>
