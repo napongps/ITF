@@ -8,8 +8,8 @@ if (mysqli_connect_errno($conn))
 }
 
 
-if (isset($_REQUEST['delete'])){
-    $id = $_REQUEST['delete']
+if (isset($_REQUEST['id'])){
+    $id = $_REQUEST['id']
     mysqli_query($conn, "DELETE FROM GuestBook WHERE id = $id");
     header('Location:show.php')
 }
