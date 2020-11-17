@@ -16,7 +16,7 @@
     if(mysqli_query($conn,$sql)){
       echo"The record has been update";
       header("location:show.php");
-    }else{
+    }else
       echo"ERROR" . mysqli_error($conn);
     }
   }
@@ -29,11 +29,11 @@
 <body>
   <!-- <form action = "insert.php" method = "post" id="CommentForm" > -->
     Name:<br>
-    <input type="text" name = "name" id="idName" value="<?= $row['name']; ?>"> <br>
+    <input type="text" name = "name" id="idName" value="<?= $row['Name']; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $row['comment']; ?>"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $row['Comment']; ?>"></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" value="<?= $row['link']; ?>"> <br><br>
+    <input type="text" name = "link" id="idLink" value="<?= $row['Link']; ?>"> <br><br>
     <input type="submit" name = "update" id="commentBtn">
   </form>
 </body>
