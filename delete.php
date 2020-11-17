@@ -9,24 +9,11 @@ if (mysqli_connect_errno($conn))
 
 
 if (isset($_REQUEST['delete'])){
-    $id = $_REQUEST['delete'];
-    $select_stmt = $db->prepare("SELECT * FROM GuestBook WHERE id = :id")
-    $select_stmt->bindParam(':id', $id);
-    $select_stmt->execute();
-    $row = $select_stmt->fetch(PDO::FETCH_ASSOC);
-    $delete_stmt = $db->prepare('DELETE FROM GuestBook WHERE id = :id');
-    $delete_stmt->bindParam(':id', $id);
-    $delete_stmt->execute();
-
+    $id = $_REQUEST['delete']
+    mysqli_query($conn, "DELETE FROM GuestBook WHERE id = $id");
     header('Location:show.php')
 }
 
-
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-  } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
   
 mysqli_close($conn);
 ?>
