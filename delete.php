@@ -6,7 +6,7 @@ $conn = mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongp
 $id = $_REQUEST['id'];
 $sql = "DELETE FROM GuestBook WHERE id='$id'";
 if(mysqli_query($conn,$sql)){
-  echo"The record has been deleted"
+  echo"The record has been deleted";
   header("location:show.php");
 } else{
   echo"$id" . $sql .  mysqli_error($conn);
