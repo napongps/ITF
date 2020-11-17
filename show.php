@@ -31,7 +31,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
     <th> <div align="center">Edit</div></th>
   </tr>
 <?php
-// while($Result = mysqli_fetch_array($res))
+while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
