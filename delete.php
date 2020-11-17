@@ -1,7 +1,5 @@
 <?php
-
-$conn = mysqli_init();
-$conn = mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
+include 'Connect_to_db';
 
 $id = $_REQUEST['id'];
 $sql="DELETE FROM GuestBook WHERE id='$id'";
