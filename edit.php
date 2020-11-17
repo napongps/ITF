@@ -5,7 +5,7 @@
   $result = mysqli_query($conn,"SELECT * FROM GuestBook WHERE id='$id'");
   $row = mysqli_fetch_assoc($result);
 
-  if(isset($_REQUEST['submit'])){
+  if(isset($_POST['submit'])){
     $id = $_GET['id'];
     $name = $POST['name'];
     $comment = $POST['comment'];
