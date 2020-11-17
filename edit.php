@@ -5,7 +5,7 @@
   $result = mysqli_query($conn,"SELECT * FROM GuestBook WHERE id='$id'");
   $row = mysqli_fetch_assoc($result);
 
-  if(isset($_POST['submit'])){
+  if(isset($_POST['update'])){
     $id = $_GET['id'];
     $name = $POST['name'];
     $comment = $POST['comment'];
@@ -34,7 +34,7 @@
     <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $row['comment']; ?>"></textarea><br>  
     Link:<br>
     <input type="text" name = "link" id="idLink" value="<?= $row['link']; ?>"> <br><br>
-    <input type="submit" name = "submit" id="commentBtn">
+    <input type="submit" name = "update" id="commentBtn">
   </form>
 </body>
 </html>
