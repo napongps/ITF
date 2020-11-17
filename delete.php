@@ -9,7 +9,6 @@ if(mysqli_query($conn,$sql)){
   header("location:show.php");
 } else{
   echo"$id";
-  echo"mysqli_fetch_array['id'];
 }
   
 mysqli_close($conn);
