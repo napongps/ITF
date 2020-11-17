@@ -6,7 +6,7 @@ $id = $_GET['id'];
 
 $sql="DELETE FROM GuestBook WHERE id='$id'";
 if(mysqli_query($conn,$sql)){
-  header("location:show.php");
+  echo"Hooray";
 }
 else{
   echo"$id";
