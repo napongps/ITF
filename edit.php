@@ -11,13 +11,13 @@
     $comment = $POST['comment'];
     $link = $POST['link'];
 
-    $sql = "UPDATE GuestBook SET Name='$name',Comment='$comment', link='$link' WHERE id='id'";
+    $sql = "UPDATE GuestBook SET Name='$name',Comment='$comment', Link='$link' WHERE id='id'";
 
     if(mysqli_query($conn,$sql)){
       echo"The record has been update";
-      header("location:show.php")
+      header("location:show.php");
     }else{
-      echo"ERROR" . mysqli_error($conn)
+      echo"ERROR" . mysqli_error($conn);
     }
   }
 ?>
