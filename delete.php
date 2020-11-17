@@ -9,7 +9,7 @@ if(mysqli_query($conn,$sql)){
   header("location:show.php");
 }
 else{
-  echo"ERROR";
+  echo"$id";
 }
   
 mysqli_close($conn);
