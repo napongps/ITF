@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     $sql = "UPDATE GuestBook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$id'";
 
     if(mysqli_query($conn, $sql)){
-        echo "Hooray"
+        echo "Hooray";
     }
 }
 ?>
