@@ -25,7 +25,7 @@
 	<title>Comment Form</title>
 </head>
 <body>
-  <!-- <form action = "insert.php" method = "post" id="CommentForm" > -->
+  <form action = "edit.php" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" value="<?= $row['name']; ?>"> <br>
     Comment:<br>
