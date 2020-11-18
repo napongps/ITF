@@ -6,7 +6,6 @@
   $row = mysqli_fetch_assoc($result);
 
   if(isset($_POST['update'])){
-    $id = $_GET['id'];
     $name = $POST['name'];
     $comment = $POST['comment'];
     $link = $POST['link'];
@@ -15,7 +14,6 @@
 
     if(mysqli_query($conn,$sql)){
       echo"The record has been update";
-      header("location:show.php");
     }else
       echo"ERROR" . mysqli_error($conn);
     }
