@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $sql = "UPDATE GuestBook SET Name='$name', Comment='$comment', Link='$link' WHERE id='$id'";
 
     if(mysqli_query($conn, $sql)){
-        echo "Hooray";
+        header("location:show.php");
     }
 }
 ?>
@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
     Name:<br>
     <input type="text" name = "name" id="idName" value="<?= $row['Name']; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<? $row['Comment']; ?>"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<? echo $row['Comment']; ?>"></textarea><br>  
     Link:<br>
     <input type="text" name = "link" id="idLink" value="<?= $row['Link']; ?>"> <br><br>
     <input type="submit" name="submit" id="commentBtn" value="update">
