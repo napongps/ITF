@@ -6,6 +6,8 @@ if (mysqli_connect_errno($conn))
     die('Failed to connect to MySQL: '.mysqli_connect_error());
 }
 $id = $_GET['id'];
+$result = mysqli_query($conn, "SELECT * FROM GuestBook WHERE id='$id'");
+$row=mysqli_fetch_assoc($result);
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,11 +17,11 @@ $id = $_GET['id'];
 <body>
   <form action = "insert.php" method = "post" id="CommentForm" >
     Name:<br>
-    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
+    <input type="text" name = "name" id="idName" value="<?= $row['Name']; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?  $row['Comment']; ?>"></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    <input type="text" name = "link" id="idLink" value="<?= $row['Link']; ?>"> <br><br>
     <input type="submit" id="commentBtn" value="update">
   </form>
 </body>
