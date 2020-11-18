@@ -3,7 +3,7 @@
   $conn = mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
   $id = $_GET['id'];
   $result = mysqli_query($conn,"SELECT * FROM GuestBook WHERE id='$id'");
-  $row = mysqli_fetch_assoc($result);
+  $row = mysql_fetch_array($result);
 
   if(isset($_POST['update'])){
     $name = $POST['name'];
@@ -27,11 +27,11 @@
 <body>
   <form action = "edit.php" method = "post" id="CommentForm" >
     Name:<br>
-    <input type="text" name = "name" id="idName" value="<?= $row['name']; ?>"> <br>
+    <input type="text" name = "name" id="idName" value="<?= echo $row['name']; ?>"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $row['comment']; ?>"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= echo $row['comment']; ?>"></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" value="<?= $row['link']; ?>"> <br><br>
+    <input type="text" name = "link" id="idLink" value="<?= echo $row['link']; ?>"> <br><br>
     <input type="submit" name = "update" id="commentBtn">
   </form>
 </body>
