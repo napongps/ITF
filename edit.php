@@ -1,24 +1,11 @@
 <?php
-  $conn = mysqli_init();
-  $conn = mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
-  $id = $_GET['id'];
-  $sql = "SELECT * FROM GuestBook WHERE id='$id'";
-  $result = mysqli_query($conn, $sql);
-  $row = mysql_fetch_array($result);
-
-  if(isset($_POST['update'])){
-    $name = $POST['name'];
-    $comment = $POST['comment'];
-    $link = $POST['link'];
-
-    $sql = "UPDATE GuestBook SET Name='$name',Comment='$comment', Link='$link' WHERE id='id'";
-
-    if(mysqli_query($conn,$sql)){
-      echo"The record has been update";
-    }else
-      echo"ERROR" . mysqli_error($conn);
-    }
-  }
+$conn = mysqli_init();
+mysqli_real_connect($conn, 'napongps.mysql.database.azure.com', 'napongps@napongps', 'Jklhgdf1123', 'ITFlab', 3306);
+if (mysqli_connect_errno($conn))
+{
+    die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+$id = $_GET['id'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,14 +13,14 @@
 	<title>Comment Form</title>
 </head>
 <body>
-  <form action = "" method = "post" id="CommentForm" >
+  <form action = "insert.php" method = "post" id="CommentForm" >
     Name:<br>
-    <input type="text" name = "name" id="idName" value="<?= $row['name']; ?>"> <br>
+    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
     Comment:<br>
-    <textarea rows="10" cols="20" name = "comment" id="idComment" value="<?= $row['comment']; ?>"></textarea><br>  
+    <textarea rows="10" cols="20" name = "comment" id="idComment" placeholder="Enter Comment"></textarea><br>  
     Link:<br>
-    <input type="text" name = "link" id="idLink" value="<?= $row['link']; ?>"> <br><br>
-    <input type="submit" name = "update" id="commentBtn">
+    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    <input type="submit" id="commentBtn" value="update">
   </form>
 </body>
 </html>
