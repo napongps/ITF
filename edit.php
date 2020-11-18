@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Comment Form</title>
+	<title>Edit Form</title>
 </head>
 <body>
   <form action = "" method = "post" id="CommentForm" >
