@@ -65,6 +65,9 @@ input[type=submit]:hover {
 <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
 </head>
 <body>
+<div class="container" aling=center>
+	<div class="row h-100">
+		<div class="col-sm-12 my-auto">
   <form action = "" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" value="<?= $row['Name']; ?>"> <br>
@@ -73,6 +76,9 @@ input[type=submit]:hover {
     Link:<br>
     <input type="text" name = "link" id="idLink" value="<?= $row['Link']; ?>"> <br><br>
     <input type="submit" name="submit" id="commentBtn" value="update">
+	  </div>
+		</div>
+	</div>
   </form>
 </body>
 </html>
