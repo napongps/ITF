@@ -33,8 +33,8 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1>ITF lab</h1>
+  <p>63070219 Napong pipatbvonkul</p> 
 </div>
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
