@@ -40,7 +40,7 @@ if (mysqli_connect_errno($conn))
 $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 ?>
 <div class="jumbotron text-center" style="margin-bottom:0">
-  <h1 class="animated bounce infinite">ITF lab</h1>
+  <h1 class="animated slideOutDown infinite">ITF lab</h1>
   <p>63070219 Napong pipatbvonkul</p> 
 </div>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
