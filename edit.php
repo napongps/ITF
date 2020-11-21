@@ -52,21 +52,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-   body {
-  height: 100%;
-}
-.bg {
-  /* The image used */
-  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 </style>
 <head>
@@ -94,7 +79,7 @@ input[type=submit]:hover {
       </li>
     </ul>
   </nav>
-<div class="bg">
+<div class="bg-gradient-info">
 	<br><br>
 <div class="container" aling=center>
 	<div class="row h-100">
