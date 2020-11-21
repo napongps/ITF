@@ -52,6 +52,22 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+   body {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 </style>
 <head>
 	<title>Edit Form</title>
@@ -77,7 +93,9 @@ input[type=submit]:hover {
         <a href="form.html" class="nav-link">เพิ่ม</a>
       </li>
     </ul>
-  </nav><br><br>
+  </nav>
+<div class="bg">
+	<br><br>
 <div class="container" aling=center>
 	<div class="row h-100">
 		<div class="col-sm-12 my-auto" align=center>
@@ -91,6 +109,7 @@ input[type=submit]:hover {
     <input type="submit" name="submit" id="commentBtn" value="update">
 	  </div>
 		</div>
+	</div>
 	</div>
   </form>
 </body>
