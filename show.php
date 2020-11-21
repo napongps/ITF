@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
 </head>
  <style>
-   body, html {
+   body {
   height: 100%;
 }
 .bg {
