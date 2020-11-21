@@ -40,7 +40,7 @@ while($Result = mysqli_fetch_array($res))
 <!--     <td><a href="edit.php?id=<?= $Result['id']; ?>" class="btn btn-primary">แก้ไข</a></td> -->
     <td><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <div class="btn-group" role="group">
-    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Changes
     </button>
     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
