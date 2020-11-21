@@ -16,7 +16,7 @@
 }
 .bg {
   /* The image used */
-  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.prototypr.io%2F5-css-animated-backgrounds-to-inspire-your-next-project-97fdb692e852&psig=AOvVaw0D02wdIqpE6kiFh5BvvxWh&ust=1606062624119000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiSy9iHlO0CFQAAAAAdAAAAABAQ");
 
   /* Full height */
   height: 100%;
@@ -26,6 +26,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.table {
+  
   </style>
 <body>
 <?php
@@ -49,8 +51,9 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
         <a href="form.html" class="nav-link">เพิ่ม</a>
       </li>
     </ul>
-  </nav><br><br>
+  </nav>
 <div class="bg">
+  <br><br>
 <table class="table" style="width:600" border="1" align=center>
   <thead class="thead-dark">
   <tr>
@@ -64,12 +67,12 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td class="bg-light text-dark"><?php echo $Result['Name'];?></div></td>
+    <td class="bg-light text-dark"><?php echo $Result['Comment'];?></td>
+    <td class="bg-light text-dark"><?php echo $Result['Link'];?></td>
 <!--     <td><a href="delete.php?id=<?= $Result['id']; ?>" class="btn btn-danger">ลบ</a></td> -->
 <!--     <td><a href="edit.php?id=<?= $Result['id']; ?>" class="btn btn-primary">แก้ไข</a></td> -->
-    <td><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <td class="bg-light text-dark"><div class="btn-group" role="group" aria-label="Button group with nested dropdown">
   <div class="btn-group" role="group">
     <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Changes
