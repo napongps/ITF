@@ -32,7 +32,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
         <a href="form.html" class="nav-link">เพิ่ม</a>
       </li>
     </ul>
-  </nav>
+  </nav><br><br>
 <table class="table" style="width:600" border="1" align=center>
   <thead class="thead-dark">
   <tr>
