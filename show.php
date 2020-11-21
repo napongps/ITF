@@ -16,7 +16,7 @@
 }
 .bg {
   /* The image used */
-  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.prototypr.io%2F5-css-animated-backgrounds-to-inspire-your-next-project-97fdb692e852&psig=AOvVaw0D02wdIqpE6kiFh5BvvxWh&ust=1606062624119000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiSy9iHlO0CFQAAAAAdAAAAABAQ");
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
 
   /* Full height */
   height: 100%;
