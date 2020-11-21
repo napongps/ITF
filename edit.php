@@ -80,7 +80,7 @@ input[type=submit]:hover {
   </nav><br><br>
 <div class="container" aling=center>
 	<div class="row h-100">
-		<div class="col-sm-12 my-auto">
+		<div class="col-sm-12 my-auto" align=center>
   <form action = "" method = "post" id="CommentForm" >
     Name:<br>
     <input type="text" name = "name" id="idName" value="<?= $row['Name']; ?>"> <br>
