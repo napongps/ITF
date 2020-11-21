@@ -32,6 +32,10 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
