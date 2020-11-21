@@ -10,6 +10,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
 </head>
+ <style>
+   body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  </style>
 <body>
 <?php
 $conn = mysqli_init();
@@ -33,6 +50,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
       </li>
     </ul>
   </nav><br><br>
+<div class="bg">
 <table class="table" style="width:600" border="1" align=center>
   <thead class="thead-dark">
   <tr>
@@ -68,11 +86,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
 </table>
-<div class = container>
-  <div class="row justify-content-center">
-<!--     <a href="https://napong.azurewebsites.net/form.html" class="btn btn-primary">เพิ่ม</a> -->
   </div>
-</div>
 <?php
 mysqli_close($conn);
 ?>
