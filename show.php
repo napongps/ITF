@@ -29,7 +29,7 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a href="form.html" class="btn btn-primary">เพิ่ม</a>
+        <a href="form.html" class="nav-link">เพิ่ม</a>
       </li>
     </ul>
   </nav>
