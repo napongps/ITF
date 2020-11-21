@@ -20,6 +20,10 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 ?>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>ITF lab</h1>
+  <p>63070219 Napong pipatbvonkul</p> 
+</div>
 <table class="table" style="width:600" border="1" align=center>
   <thead class="thead-dark">
   <tr>
@@ -32,10 +36,6 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
 while($Result = mysqli_fetch_array($res))
 {
 ?>
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>ITF lab</h1>
-  <p>63070219 Napong pipatbvonkul</p> 
-</div>
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
