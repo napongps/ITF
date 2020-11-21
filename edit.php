@@ -65,6 +65,19 @@ input[type=submit]:hover {
 <link href="https://fonts.googleapis.com/css2?family=Kanit" rel="stylesheet">
 </head>
 <body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>ITF lab</h1>
+  <p>63070219 Napong pipatbvonkul</p> 
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="show.php">Home</a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="form.html" class="nav-link">เพิ่ม</a>
+      </li>
+    </ul>
+  </nav><br><br>
 <div class="container" aling=center>
 	<div class="row h-100">
 		<div class="col-sm-12 my-auto">
