@@ -24,6 +24,8 @@ $res = mysqli_query($conn, 'SELECT * FROM GuestBook');
   <h1>ITF lab</h1>
   <p>63070219 Napong pipatbvonkul</p> 
 </div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  </nav>
 <table class="table" style="width:600" border="1" align=center>
   <thead class="thead-dark">
   <tr>
